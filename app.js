@@ -147,7 +147,11 @@ function renderProducts(page) {
 		  <img src="${product.image}" alt="Product Image" class="w-full h-48 object-cover mb-4 rounded-lg">
 		  <h3 class="text-lg font-semibold">${product.name}</h3>
 		  <p class="text-orange-600 font-semibold mb-2">${product.price}</p>
-		  <button class="bg-ijotuo-100 text-white px-4 py-2 rounded-md">Buy</button>
+		  <button type="button"
+        class="mt-4 text-white bg-ijotuo-100 hover:bg-oren-100 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="https://api.whatsapp.com/send/?phone=6281395429951&text&type=phone_number&app_absent=0"
+        target="_blank">Order</a>
+      </button>
 		</div>
 	  `;
     productContainer.innerHTML += productHTML;
